@@ -30,6 +30,7 @@ import { calculateStats, mockBeneficiaries, mockPackages, mockTasks, mockCourier
 import { useAlerts } from '../context/AlertsContext';
 import { useErrorLogger } from '../utils/errorLogger';
 import GazaMap, { type MapPoint } from './GazaMap';
+import BeneficiaryDetailsModal from './BeneficiaryDetailsModal';
 import { Button, Card, Badge } from './ui';
 
 // Import pages
@@ -305,5 +306,13 @@ export default function AdminDashboard({ activeTab, setActiveTab }: AdminDashboa
         </div>
       </div>
     </div>
+      {/* Beneficiary Details Modal */}
+      {selectedBeneficiary && (
+        <BeneficiaryDetailsModal
+          beneficiary={selectedBeneficiary}
+          onClose={() => setSelectedBeneficiary(null)}
+        />
+      )}
+
   );
 }
