@@ -8,7 +8,7 @@ import {
   type Package as PackageType,
   type Task
 } from '../../data/mockData';
-import BeneficiaryDetailsModal from '../ui/BeneficiaryDetailsModal';
+import BeneficiaryDetailsModal from '../BeneficiaryDetailsModal';
 
 interface BeneficiariesListPageProps {
   initialTab?: string;
