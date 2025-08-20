@@ -270,5 +270,3 @@ export default function BeneficiaryDetailsModal({ beneficiary, onClose }: Benefi
     </div>
   );
 }
-
-export default BeneficiaryDetailsModal
