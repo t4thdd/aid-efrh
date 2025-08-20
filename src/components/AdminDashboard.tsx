@@ -305,7 +305,7 @@ export default function AdminDashboard({ activeTab, setActiveTab }: AdminDashboa
           {renderContent()}
         </div>
       </div>
-    </div>
+
       {/* Beneficiary Details Modal */}
       {selectedBeneficiary && (
         <BeneficiaryDetailsModal
@@ -313,6 +313,6 @@ export default function AdminDashboard({ activeTab, setActiveTab }: AdminDashboa
           onClose={() => setSelectedBeneficiary(null)}
         />
       )}
-
+    </div>
   );
 }
