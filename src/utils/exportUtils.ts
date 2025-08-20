@@ -86,7 +86,6 @@ class ExportService {
         success: false,
         filename: '',
         recordsCount: 0,
-        recordsCount: 0,
         fileSize: '0 KB',
         error: errorMessage
       };
@@ -147,7 +146,6 @@ class ExportService {
         success: false,
         filename: '',
         recordsCount: 0,
-        recordsCount: 0,
         fileSize: '0 KB',
         error: errorMessage
       };
@@ -193,7 +191,6 @@ class ExportService {
         success: false,
         filename: '',
         recordsCount: 0,
-        recordsCount: 0,
         fileSize: '0 KB',
         error: errorMessage
       };
@@ -231,7 +228,6 @@ class ExportService {
       return {
         success: false,
         filename: '',
-        recordsCount: 0,
         recordsCount: 0,
         fileSize: '0 KB',
         error: errorMessage
@@ -307,7 +303,6 @@ export const useExport = () => {
       const errorResult: ExportResult = {
         success: false,
         filename: '',
-        recordsCount: 0,
         recordsCount: 0,
         fileSize: '0 KB',
         error: error instanceof Error ? error.message : 'خطأ غير معروف'
